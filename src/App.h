@@ -14,6 +14,7 @@ public:
 class App
 {
 public:
+  static void Init();
   static void OnUpdate();
 
   template <typename Scene, typename... Args>
