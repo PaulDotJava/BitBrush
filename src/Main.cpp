@@ -2,6 +2,8 @@
 #include "raylib.h"
 #include "raygui.h"
 
+#include "App.h"
+
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
@@ -16,6 +18,8 @@ int main(void)
 
   SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
   //--------------------------------------------------------------------------------------
+  
+
 
   // Main game loop
   while (!WindowShouldClose())    // Detect window close button or ESC key
@@ -37,6 +41,8 @@ int main(void)
     { 
       std::cout << "Button clicked!" << std::endl;
     }
+    
+    App::OnUpdate();
 
     EndDrawing();
     //----------------------------------------------------------------------------------
