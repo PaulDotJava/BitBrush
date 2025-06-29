@@ -7,3 +7,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(BitBrush 
   src/Main.cpp)
+
+target_include_directories(BitBrush PRIVATE deps/raylib/include)
+target_link_libraries(BitBrush PRIVATE ${CMAKE_SOURCE_DIR}/deps/raylib/lib/libraylib.a)

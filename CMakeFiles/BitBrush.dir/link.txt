@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/BitBrush.dir/src/Main.cpp.o -o BitBrush  deps/raylib/lib/libraylib.a 
