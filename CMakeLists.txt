@@ -11,7 +11,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(BitBrush 
   src/App.cpp
   src/EditorScene.cpp
-  src/RayguiImpl.cpp
+  src/StartupScene.cpp
   src/Main.cpp)
 
 add_library(Raygui SHARED

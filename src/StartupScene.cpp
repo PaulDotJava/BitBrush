@@ -1,11 +1,13 @@
 #include <string>
 
 #include "StartupScene.h"
+#include "EditorScene.h"
+#include "raylib.h"
 #define GUI_WINDOW_FILE_DIALOG_IMPLEMENTATION
 #include "gui_window_file_dialog.h"
 
-GuiWindowFileDialogState fileDialogState;
-Image image;
+static GuiWindowFileDialogState fileDialogState;
+static Image image;
 
 void StartupScene::OnUpdate(){
   if (fileDialogState.SelectFilePressed) {
@@ -26,12 +28,12 @@ void StartupScene::OnUpdate(){
   int BtnMid = GetScreenWidth() / 2;
   if(GuiButton((Rectangle){BtnMid - 150, BtnHeight, 100, 40}, "Open Image")) {
     if (fileSelected) {
-      //Open Editor with Image
+      App::SwitchScenes<EditorScene>(image);
     }
   }
 
   if(GuiButton((Rectangle){BtnMid + 50, BtnHeight, 100, 40}, "Open New")) {
-    //Open Editor with empty Image
+    App::SwitchScenes<EditorScene>(new Image());
   }
 
   GuiUnlock();
