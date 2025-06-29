@@ -11,5 +11,10 @@ public:
 
 private:
   char fileNameToLoad[512] = { 0 };
+  char newFileWidth[10] = { 0 };
+  char newFileHeight[10] = { 0 };
   bool fileSelected = false;
+
+  bool editHeight = true;
+  bool editWidth = false;
 };

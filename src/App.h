@@ -20,7 +20,7 @@ public:
   template <typename Scene, typename... Args>
   static void SwitchScenes(Args&&... args) 
   {
-    _NextScene = std::make_shared<Scene>(std::forward(args)...);   
+    _NextScene = std::make_shared<Scene>(std::forward<Args>(args)...);   
   }
 private:
   static inline std::shared_ptr<AppScene> _CurrentScene;
