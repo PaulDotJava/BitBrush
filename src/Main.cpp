@@ -17,6 +17,7 @@ int main(void)
   InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
   SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
+  SetTraceLogLevel(LOG_NONE);
   //--------------------------------------------------------------------------------------
   
   App::Init();
@@ -36,13 +37,6 @@ int main(void)
 
     ClearBackground(RAYWHITE);
 
-    DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
-
-    if(GuiButton({10, 10, 100, 30}, "Click me!"))
-    { 
-      std::cout << "Button clicked!" << std::endl;
-    }
-    
     App::OnUpdate();
 
     EndDrawing();
