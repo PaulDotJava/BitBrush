@@ -2,7 +2,7 @@
 
 #include <string>
 
-struct Image {
+struct Image2D {
   int width;
   int height;
   int *color_channels; 

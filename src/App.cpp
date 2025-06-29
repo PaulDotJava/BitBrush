@@ -1,10 +1,10 @@
 #include "App.h"
 #include "StartupScene.h"
-#include <memory>
 
 void App::Init()
 {
   _CurrentScene = std::make_shared<StartupScene>();
+  _CurrentScene->OnEnter();
 }
 
 void App::OnUpdate()
