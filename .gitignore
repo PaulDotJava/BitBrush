@@ -1,4 +1,6 @@
 deps/libs/
 build/
 .vscode/
-
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles/

@@ -1,3 +1,0 @@
-/home/daniel/dev/BitBrush/CMakeFiles/BitBrush.dir
-/home/daniel/dev/BitBrush/CMakeFiles/edit_cache.dir
-/home/daniel/dev/BitBrush/CMakeFiles/rebuild_cache.dir
